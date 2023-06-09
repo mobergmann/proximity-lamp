@@ -786,11 +786,11 @@
         )
       )
     )
-    (symbol "power:+10V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "power:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "+10V" (at 0 3.556 0)
+      (property "Value" "+12V" (at 0 3.556 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -802,10 +802,10 @@
       (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"+10V\"" (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"+12V\"" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "+10V_0_1"
+      (symbol "+12V_0_1"
         (polyline
           (pts
             (xy -0.762 1.27)
@@ -831,9 +831,9 @@
           (fill (type none))
         )
       )
-      (symbol "+10V_1_1"
+      (symbol "+12V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+10V" (effects (font (size 1.27 1.27))))
+          (name "+12V" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -1085,31 +1085,6 @@
     )
   )
 
-  (symbol (lib_id "power:+10V") (at 46.99 24.13 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 12454cff-06c1-4e2e-b391-93876d555364)
-    (property "Reference" "#PWR01" (at 50.8 24.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+10V" (at 41.91 21.59 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (at 46.99 24.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 46.99 24.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5921c109-cb71-4413-b9c7-63517321ab3a))
-    (instances
-      (project "schematic"
-        (path "/46000928-40e7-4132-8b6b-3b3af6202dd3"
-          (reference "#PWR01") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Relay:TIANBO-HJR-4102-L") (at 123.19 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2d40a6aa-af4f-4157-8065-a6676bc45bc4)
@@ -1169,10 +1144,10 @@
   (symbol (lib_id "Device:LED") (at 130.81 86.36 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 579c02d9-c559-4c77-b660-50f0d921b2a5)
-    (property "Reference" "High-Voltage-LED1" (at 143.51 85.09 90)
+    (property "Reference" "12V-LED1" (at 139.7 85.09 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "LED" (at 143.51 87.63 90)
+    (property "Value" "LED" (at 139.7 87.63 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 130.81 86.36 0)
@@ -1186,32 +1161,32 @@
     (instances
       (project "schematic"
         (path "/46000928-40e7-4132-8b6b-3b3af6202dd3"
-          (reference "High-Voltage-LED1") (unit 1)
+          (reference "12V-LED1") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:+10V") (at 127 129.54 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 641cfbca-6bca-4893-9d32-ef5b398148c4)
-    (property "Reference" "#PWR03" (at 130.81 129.54 0)
+  (symbol (lib_id "power:+12V") (at 46.99 24.13 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 72174039-f2c5-41b2-aa22-3bed50a70a3d)
+    (property "Reference" "#PWR06" (at 50.8 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+10V" (at 124.46 132.08 90)
-      (effects (font (size 1.27 1.27)) (justify right))
+    (property "Value" "+12V" (at 43.18 24.13 90)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 127 129.54 0)
+    (property "Footprint" "" (at 46.99 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 127 129.54 0)
+    (property "Datasheet" "" (at 46.99 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4795f35d-7349-41e8-a507-bcb5eed31eaf))
+    (pin "1" (uuid 8df142d7-4136-45e8-9d3d-86f766f69dae))
     (instances
       (project "schematic"
         (path "/46000928-40e7-4132-8b6b-3b3af6202dd3"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -1386,6 +1361,31 @@
       (project "schematic"
         (path "/46000928-40e7-4132-8b6b-3b3af6202dd3"
           (reference "R2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+12V") (at 127 129.54 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid bfdb9d88-d860-41e7-a3d3-17f0616f91eb)
+    (property "Reference" "#PWR01" (at 130.81 129.54 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+12V" (at 123.19 129.54 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 127 129.54 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 127 129.54 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5a029c3b-d760-43ff-ac41-cd4a38d04725))
+    (instances
+      (project "schematic"
+        (path "/46000928-40e7-4132-8b6b-3b3af6202dd3"
+          (reference "#PWR01") (unit 1)
         )
       )
     )
